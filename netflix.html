@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .first{
+        background-image: url("bg.jpg") ;
+        height: 100vh;
+      }
+     .main{
+      height: 100vh;
+      background-image: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0.8) 0,
+          rgba(0, 0, 0, 0) 60%,
+          rgba(0, 0, 0, 0.8) 100%
+        );
+        background: rgb(0 0 0 / 40%);
+     }
+      nav {
+        /* background-color: yellow; */
+        display: flex;
+        height: 10vh;
+        justify-content: space-around;
+      }
+      .net {
+        color: rgb(229, 9, 20);
+        font: 900;
+        font-size: 3.5rem;
+        font-weight: bolder;
+        margin: 5px 0px;
+      }
+      .btn {
+        margin: -8px;
+      }
+      .btn #lang {
+        height: 5vh;
+        width: 10vw;
+        border-radius: 5px;
+        border: 2px solid white;
+        font-size: 1.5rem;
+      }
+      .btn button {
+        margin: 20px;
+        color: azure;
+        background-color: rgb(229, 9, 20);
+        height: 5vh;
+        width: 8vw;
+        font-size: 1.5rem;
+        border-radius: 5px;
+      }
+      .container {
+        color: white;
+        display: grid;
+        row-gap: 5vh;
+        justify-content: center;
+        margin-top: 10%;
+      }
+      .container h1 {
+        font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+          sans-serif;
+        font-size: 3rem;
+        font-weight: 900;
+        color: white;
+      }
+      .container p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+      }
+      form h3 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        display: flex;
+        justify-content: center;
+      }
+      #txt {
+        background-color: unset;
+        color: white;
+       border-color: aliceblue;
+        line-height: 1.5rem;
+        font-size: 1rem;
+        height: 6vh;
+        width: 25vw;
+        margin: 0px 150px;
+        border-radius: 5px;
+      }
+      .getbtn {
+        margin: 0px -140px;
+        height: 6vh;
+        width: 10vw;
+        background-color: rgb(229, 9, 20);
+        border-radius: 5px;
+      }
+      .second{
+        height: 80vh;
+        background-color: black;
+        display: flex;
+        justify-content: space-around;
+        
+
+      }
+      .enjoy{
+        color: white;
+        margin: auto;
+      }
+      .enjoy h1{
+        font-size: 3rem;
+       font-weight: 900;
+      }
+      .enjoy p{
+        font-weight: 400;
+        font-size: 1.5rem;
+      }
+      .tv img{
+        /* align-self: center; */
+        z-index: 1;
+      }
+      .video {
+        margin: -388px 0px 0px 72px;
+        z-index: 0;
+      }
+      .third{
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+      }
+      .img3{
+        background-color: black;
+       width: 50vw;
+      }
+    .down{
+      width: 50vw;
+      background-color: black;
+      color:white;
+    }
+    .down h1{
+      font-size: 3.5rem;
+    }
+    .down p{
+      font-size: 1.5rem;
+    }
+   footer {
+      height: 50vh;
+      background-color: black;
+      color: white;
+      /* display: flex;
+      justify-content: space-around; */
+      align-items: center;
+      font: 1em sans-serif;
+    }
+    footer p{
+      height: 10vh;
+      padding-top: 5vh;
+    }
+    .ftr{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .f1 ul{
+      list-style: none;
+      text-decoration: underline;
+      cursor: pointer;
+      line-height: 200%;
+    }
+    .f2 ul{
+      list-style: none;
+      text-decoration: underline;
+      cursor: pointer;
+      line-height: 200%;
+    }
+    .f3 ul{
+      list-style: none;
+      text-decoration: underline;
+      cursor: pointer;
+      line-height: 200%;
+    }
+    .f4 ul{
+      list-style: none;
+      text-decoration: underline;
+      cursor: pointer;
+      line-height: 200%;
+    }
+    .last{
+      margin: 0px 0px 0px 125px;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="first"> 
+   <div class="main">
+    <header>
+      <nav>
+        <div class="net">NETFLIX</div>
+        <div class="btn">
+          <select name="lang" id="lang">
+            <option value="English">English</option>
+            <option value="Hindi">Hindi</option>
+          </select>
+          <button id="Sign">Sign In</button>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <h1>Unlimited movies, TV shows and more</h1>
+      <p>Watch anywhere. Cancel anytime.</p>
+      <form action="fill">
+        <h3>
+          Ready to watch? Enter your email to create or restart your membership.
+        </h3>
+        <input id="txt" type="text" placeholder="Email Address" />
+        <input class="getbtn" type="button" value="Get Started > " />
+      </form>
+    </div>
+  </div></div> <hr>
+  <div class="second">
+    <div class="enjoy">
+      <h1> Enjoy on your TV</h1><br>
+      <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, <br> Apple TV, Blu-ray players and more.</p>
+    </div>
+    <div class="tv">
+      <img src="tv.png" alt="tv"><div class="video">
+      <video src="video-tv-in-0819.m4v" autoplay muted loop></video>
+    </div></div>
+  </div>
+  <hr>
+  <div class="third">
+    <div class="img3">
+      <img src="mobile-0819.jpg" alt="">
+    </div>
+    <div class="down">
+      <p><h1>Download your shows to watch offline</h1></p>
+      <p>Save your favourites easily and always have something to watch.</p>
+    </div>
+  </div>
+  <hr>
+  <footer>
+    <p>Questions? Call 000-800-919-1694</p>
+    <div class="ftr"> <div class="f1">
+    <ul><li>FAQ</li>
+      <li>Account</li>
+      <li>Investor Relations</li>
+      <li>Ways to Watch</li></ul>
+    </div>
+    <div class="f2">
+      <ul>
+      <li>Help Center</li>
+      <li>Jobs</li>
+      <li>Cookie Preferences</li>
+      <li>Legal Notices</li></ul>
+    </div>
+    <div class="f3">
+      <ul>
+        <li>Speed Test</li>
+        <li>Privacy</li>
+        <li>Corporate Information</li>
+        <li>Only on Netflix</li>
+      </ul>
+    </div>
+    <div class="f4">
+      <ul>
+        <li>Media Center</li>
+        <li>Terms Of Use</li>
+        <li>Contact Us</li>
+      </ul>
+    </div></div><br><br><br>
+    <div class="last"> Netflix India</div>
+  </footer>
+  </body>
+</html>

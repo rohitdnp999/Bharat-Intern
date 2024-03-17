@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rohit's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"/>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: midnightblue;
+      color: white;
+      height: 10vh;
+    }
+    main{
+      height: 80vh;
+    }
+    footer{
+      background-color: black;
+      height: 10vh;
+      color: rgb(93, 168, 234);
+      text-align: center;
+    
+    }
+    nav {
+      display: flex;
+    }
+    body {
+      background-color: rgb(54, 7, 54);
+      font-family: "Roboto Slab", serif;
+    }
+    .name {
+      color: whitesmoke;
+      font-weight: 900;
+      font-size:  xx-large;
+      margin: 0 65px;
+      padding: 10px 0px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin-left: 440px;
+      margin-top: -6px;
+    }
+    nav ul li {
+      padding: 30px 55px;
+      cursor: pointer;
+    }
+
+    
+    .content{
+    /* display: flex; */
+      color: aqua;
+      font-size: 2.5rem;
+      margin: 10%;
+      
+    }
+    .nm1{
+      color: rgb(124, 124, 230);
+      
+    }
+    .image img{
+      box-sizing: border-box;
+      height: 40vh;
+      width: 20vw;
+      border-radius: 50%;
+      margin: -175px 0px 0px 700px;
+      margin-top: -95px;
+    }
+    .btn{
+      height: 5vh;
+      width: 10vw;
+      cursor: pointer;
+      background-color: blueviolet;
+      color: aqua;
+      box-sizing: border-box;
+      border-radius: 10px;
+      font-size: 1rem;
+      box-shadow: 5px 5px 5px rgb(77, 5, 77);
+    }
+    #element{
+      color: rgb(124, 124, 230);
+    }
+  </style>
+  <body>
+    <header>
+      <nav>
+        <div class="name">Rohit Kumar</div>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Projects</li>
+          <li>Contact Me</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="content">
+      Hi,I am <span class="nm1"> Rohit Kumar</span> <br>
+      I am a Passionate <br>
+      <span id="element"></span>
+      <br>
+      <button class="btn">Download Resume</button>
+      <div class="image">
+        <img src="Rohit.jpg" alt="Pic">
+      </div>
+    </div>
+  </main>
+    <footer>Thank You</footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed('#element', {
+        strings: ['Web Developer', 'Web Designer','Java Programmer','Python Developer'],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
